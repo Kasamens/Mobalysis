@@ -22,3 +22,7 @@ user_dir=/home/$sys_user
 
 sudo useradd -m -d $user_dir $sys_user
 
+python3 /backend/manage.py makemigrations
+
+python3 /backend/manage.py migrate
+
